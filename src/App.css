@@ -6,6 +6,8 @@
   padding: 0px;
 }
 .app_left {
+  border-right: 2px solid #f3f1f6;
+  padding: 15px;
   display: flex;
   flex: 0.25;
 }

@@ -6,9 +6,7 @@ function Left() {
         { id: 1, image: './assets/Ellipse 2.png', name: 'Hello World', message: 'Welcome to learning React!', ago: '5', newMessage: '2' },
         { id: 2, image: './assets/Ellipse2.png', name: 'Team Turon 🍌', message: '@sasha sent 3 images.', ago: '10', newMessage: '5' },
         { id: 3, image: './assets/Ellipse3.png', name: 'Da Board Room', message: '@Chris Are you going to the standups for tomorrow? You h...', ago: '5', newMessage: '1' }
-
     ];
-
     const personal = [
         { id: 1, image: './assets/avatar1.png', name: 'Robert Fox', username: 'robert',message:'8' },
         { id: 2, image: './assets/avatar2.png', name: 'Jenny Wilson', username: 'jen',message:'7' },
@@ -17,12 +15,6 @@ function Left() {
         { id: 5, image: './assets/avatar5.png', name: 'Courtney Henry', username: 'courtney',message:'4' },
         { id: 6, image: './assets/avatar6.png', name: 'Darrell Steward', username: 'rell',message:'3' },
         { id: 7, image: './assets/avatar7.png', name: 'Brooklyn Simmons', username: 'brook',message:'2' },
-
-
-
-
-
-
     ];
     return (
         <div className="Left">
@@ -33,7 +25,6 @@ function Left() {
                 <span>Team</span>
                 <div className="team_details">
                     {posts?.map((details) => (
-
 
                         <div className="left_team_details">
                             <div className="left_team_image">
@@ -76,5 +67,4 @@ function Left() {
         </div>
     );
 }
-
 export default Left;

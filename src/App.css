@@ -12,8 +12,12 @@
   flex: 0.25;
 }
 .app_middle {
-  flex: 0.2;
+  flex: 0.5;
 }
 .app_right {
-  flex: 0.4;
+  display: flex;
+  border-left: 2px solid #f3f1f6;
+  padding: 15px;
+
+  flex: 0.25;
 }

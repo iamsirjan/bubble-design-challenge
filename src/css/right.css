@@ -1,0 +1,51 @@
+.Right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.Right span {
+  display: flex;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #9a95aa;
+}
+.right_team_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.right_team_logo > img {
+  height: 130px;
+  width: 130px;
+}
+.right_team_name {
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #352956;
+}
+.right_personal_details_name {
+  display: flex;
+  align-items: center;
+}
+.right_personal_details_name p {
+  display: flex;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+
+  /* color: #9a95aa; */
+}
+.right_personal_details_name span {
+  display: flex;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-left: 5px;
+  color: #9a95aa;
+}

@@ -1,7 +1,20 @@
-import React  from "react";
+import React, { useState }  from "react";
 import "../css/middle.css";
+import { useForm } from "react-hook-form";
 
 function Middle() {
+  const [text, setText] = useState([]);
+
+  const { register, handleSubmit,reset, watch, formState: { errors } } = useForm();
+  const onSubmit = data => {
+    const newValue = data.message;
+    setText(text => [...text,newValue]);
+    reset();
+   
+   
+  };
+
+
   return (
     <div className="Middle">
   <div className="middle_name">
@@ -53,21 +66,30 @@ function Middle() {
 
       </div>
     </div>
+  {text?.map((message)=> (
     <div className="user_conversation">
       <div className="user_conversation_message_container">
+      
       <div className="user_conversation_message">
-        Okay! wait a sec
+      {message}
       </div>
       </div>
       <div className="user_conversation_timestamp">
         30 mins ago
       </div>
     </div>
+    ))}
   </div>
   </div>
 <div className="message">
   <div className="message_input">
-    <input placeholder="Message Team Turon" type="text" />
+    <form onSubmit={handleSubmit(onSubmit)} className="message_input">
+     <input 
+     {...register("message", { required: true })} 
+     placeholder="Message Team Turon" type="text" />
+  
+  <input type="submit"  hidden/>
+   </form> 
   </div>
   </div>
     </div>

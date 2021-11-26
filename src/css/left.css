@@ -12,7 +12,7 @@
 .left_team {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .left_team span {
   font-family: "Circular Std", sans-serif;
@@ -25,6 +25,7 @@
   margin-top: 15px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .left_team_details {
   display: flex;
@@ -40,7 +41,7 @@
   flex-direction: column;
   margin-left: 12px;
   flex: 0.8;
-  height: 54px;
+
   overflow: hidden;
 }
 .left_team_name span {

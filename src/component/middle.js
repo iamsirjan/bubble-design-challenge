@@ -8,16 +8,19 @@ function Middle() {
     Team Turon
   </div>
   <div className="conversation">
+   
+   <div className="conversation_system">
+    
     <div className="user_reply">
       <div className="user_reply_avatar">
-        <img src="./assets/avatar1.png" />
+        <img src="./assets/avatar4.png" />
       </div>
       <div className="user_reply_message_container">
         <div className="user_reply_message">
-        We’re not having standups today. I have no internet since midnight 
+       What are the tasks for today?
         </div>
         <div className="user_reply_timestamp">
-         @robert, 11:43 pm
+         @brooklyn, 11:43 pm
         </div>
 
       </div>
@@ -60,6 +63,7 @@ function Middle() {
         30 mins ago
       </div>
     </div>
+  </div>
   </div>
 <div className="message">
   <div className="message_input">

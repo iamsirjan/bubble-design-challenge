@@ -1,0 +1,105 @@
+.Middle {
+  display: flex;
+  flex-direction: column;
+}
+.middle_name {
+  display: flex;
+  flex: 1;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #352956;
+  padding: 24px 0px 14px 16px;
+
+  border-bottom: 2px solid #f3f1f6;
+}
+.message {
+  display: flex;
+  justify-content: center;
+}
+.message_input {
+  position: fixed;
+  bottom: 0;
+  width: 45%;
+  display: flex;
+}
+.message_input > input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f7f6fa;
+  border: none;
+  outline: none;
+  border-radius: 11px;
+}
+.conversation {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+}
+.user_conversation {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.user_conversation_message_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.user_conversation_message {
+  background: #f7f6fa;
+  border-radius: 16px 16px 0px 16px;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #352956;
+  padding: 16px 24px 16px 24px;
+  width: fit-content;
+}
+.user_conversation_timestamp {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  padding-top: 6px;
+  color: #9a95aa;
+}
+.user_reply {
+  display: flex;
+
+  padding: 20px;
+}
+.user_reply_avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 22px;
+}
+.user_reply_avatar > img {
+  height: 28px;
+  width: 28px;
+}
+.user_reply_message_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 50%;
+}
+.user_reply_message {
+  background-color: #756af0;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 16px 24px 16px 24px;
+  color: #ffffff;
+  border-radius: 16px 16px 16px 0px;
+}
+.user_reply_timestamp {
+  font-family: "Circular Std", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-top: 6px;
+  color: #9a95aa;
+}
